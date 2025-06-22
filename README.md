@@ -1,7 +1,20 @@
-# RPA Challenge > [rpachallenge.com](https://rpachallenge.com/)
+# RPA Challenge
 
-## Instructions
+## URL: [rpachallenge.com](https://rpachallenge.com/)
+
+## Challenge Instructions
 1. The goal of this challenge is to create a workflow that will input data from a spreadsheet into the form fields on the screen.
 2. Beware! The fields will change position on the screen after every submission throughout 10 rounds thus the workflow must correctly identify where each spreadsheet record must be typed every time.
 3. The actual countdown of the challenge will begin once you click the Start button until then you may submit the form as many times as you wish without receiving penalties.
 Good luck!
+
+## Setup Steps
+1. Download Python if needed: **[https://www.python.org/downloads/](https://www.python.org/downloads/)**
+2. Open Command Prompt
+3. Change directory into the 'Downloads' folder: **cd ~/Downloads**
+4. Clone this repo: **git clone https://github.com/bkocsis3/rpa-challenge.git**
+5. Change directory into the repo folder: **cd rpa-challenge**
+6. Create a virtual environment: **py -m venv rpa-challenge-venv**
+7. Activate the virtual environment: **rpa-challenge-venv/Scripts/activate.bat**
+8. Install dependancies in the virual environment: **pip install pandas request**
+9. Run the Python solution: **py rpa-challenge**
