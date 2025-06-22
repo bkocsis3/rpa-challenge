@@ -1,0 +1,3 @@
+# Ignore virtual environments
+venv/
+rpa-challenge-venv/

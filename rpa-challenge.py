@@ -4,14 +4,16 @@ import requests #for download
 from selenium.webdriver.common.by import By #for find element by
 from selenium import webdriver #for webdriver
 from pathlib import Path #to find users download folder
-import time #for delays
+import ctypes #for instructional delays
 
 #open rpa challenge site
 url = "https://rpachallenge.com/"
 driver = webdriver.Chrome()
 driver.get(url)
 driver.maximize_window()
-time.sleep(5)
+
+#pause for instructions
+ctypes.windll.user32.MessageBoxW(0, "The automation has been paused so you can get familiar with the challenge. Click Ok when you're ready to start.", "Quick Pause", 1)
 
 #download excel data
 download_url = "https://rpachallenge.com/assets/downloadFiles/challenge.xlsx"
@@ -49,5 +51,5 @@ for index in data.index:
     submit.click()
     
 #pause and close
-time.sleep(5)
+ctypes.windll.user32.MessageBoxW(0, "Nice work! Click Ok when you're ready to close.", "Quick Pause", 1)
 driver.quit()
