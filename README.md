@@ -11,7 +11,7 @@ Good luck!
 ## Setup
 1. Download Python if needed: **[https://www.python.org/downloads/](https://www.python.org/downloads/)**
 2. Open Command Prompt
-3. CD into the 'Downloads' folder: **cd ~/Downloads**
+3. CD into the 'Downloads' folder: **cd %USERPROFILE%\Downloads**
 4. Clone this repo: **git clone https://github.com/bkocsis3/rpa-challenge.git**
 5. CD into the repo folder: **cd rpa-challenge**
 6. Create a virtual environment: **py -m venv rpa-challenge-venv**
