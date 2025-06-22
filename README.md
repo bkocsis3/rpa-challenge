@@ -1,5 +1,7 @@
 # RPA Challenge
-### URL: [rpachallenge.com](https://rpachallenge.com/)
+
+## URL
+[rpachallenge.com](https://rpachallenge.com/)
 
 ## Challenge Instructions
 1. The goal of this challenge is to create a workflow that will input data from a spreadsheet into the form fields on the screen.
@@ -15,5 +17,5 @@ Good luck!
 5. Change directory into the repo folder: **cd rpa-challenge**
 6. Create a virtual environment: **py -m venv rpa-challenge-venv**
 7. Activate the virtual environment: **rpa-challenge-venv\Scripts\activate.bat**
-8. Install dependancies in the virual environment: **pip install pandas requests selenium**
+8. Install dependancies in the virual environment: **pip install pandas requests selenium openpyxl**
 9. Run the Python solution: **py rpa-challenge**
