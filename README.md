@@ -18,5 +18,10 @@ Good luck!
 7. Activate the virtual environment: **rpa-challenge-venv\Scripts\activate.bat**
 8. Install dependancies in the virual environment: **pip install pandas requests selenium openpyxl**
 
-### Solution
+### Running the Solution
 1. Run the Python script: **py rpa-challenge.py**
+
+### Future Features/Versions
+1. Add logging
+2. Create a headless, dockerized version
+3. Create a headed, dockerized version that can be watched
