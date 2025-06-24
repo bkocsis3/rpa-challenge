@@ -4,16 +4,17 @@ import requests #for download
 from selenium.webdriver.common.by import By #for find element by
 from selenium import webdriver #for webdriver
 from pathlib import Path #to find users download folder
-import ctypes #for instructional delays
+import logging #for logging
+
+#configurations
+logging.basicConfig(level=logging.INFO)
 
 #open rpa challenge site
 url = "https://rpachallenge.com/"
 driver = webdriver.Chrome()
 driver.get(url)
 driver.maximize_window()
-
-#pause for instructions
-ctypes.windll.user32.MessageBoxW(0, "The automation has been paused so you can get familiar with the challenge. Click Ok when you're ready to start.", "Quick Pause", 1)
+logging.info("rpa challenge site opened")
 
 #download excel data
 download_url = "https://rpachallenge.com/assets/downloadFiles/challenge.xlsx"
@@ -22,13 +23,16 @@ file_name = download_folder + "\challenge.xlsx"
 download = requests.get(download_url)
 with open(file_name, 'wb') as f:
     f.write(download.content)
+logging.info("challenge data downloaded, see " + str(file_name))
 
 #read data
 data = pd.read_excel(file_name)
+logging.info("read " + str(file_name))
 
 #start challenge
 challenge_button = driver.find_element(By.XPATH, '//button')
 challenge_button.click()
+logging.info("started challenge timer")
 
 #begin main process loop
 for index in data.index:
@@ -49,7 +53,11 @@ for index in data.index:
     role.send_keys(str(data['Role in Company'][index]))
     company.send_keys(str(data['Company Name'][index]))
     submit.click()
-    
-#pause and close
-ctypes.windll.user32.MessageBoxW(0, "Nice work! Click Ok when you're ready to close.", "Quick Pause", 1)
+    logging.info("submitted " + str(data.at[index, 'First Name']) + " " + str(data.at[index, 'Last Name ']))
+
+#check success rate and elapsed time message
+message = driver.find_element(By.CLASS_NAME, "message2")
+logging.info(str(message.text))
+
+#close
 driver.quit()
