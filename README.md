@@ -1,6 +1,6 @@
 # RPA Challenge
 
-### URL: [rpachallenge.com](https://rpachallenge.com/)
+### Challenge URL: [rpachallenge.com](https://rpachallenge.com/)
 
 ### Challenge Instructions
 1. The goal of this challenge is to create a workflow that will input data from a spreadsheet into the form fields on the screen.
@@ -19,9 +19,8 @@ Good luck!
 8. Install dependancies in the virual environment: **pip install pandas requests selenium openpyxl**
 
 ### Running the Solution
-1. Run the Python script: **py rpa-challenge.py**
+1. Run the Python script: **py rpa-challenge-headed.py**
 
 ### Future Features/Versions
-1. Add logging
-2. Create a headless, dockerized version
-3. Create a headed, dockerized version that can be watched
+1. Create a headless, dockerized version
+2. Create a headed, dockerized version that can be watched
