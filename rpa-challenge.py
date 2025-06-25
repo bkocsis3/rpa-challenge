@@ -3,17 +3,31 @@ import pandas as pd #module for datasets
 import requests #for download
 from selenium.webdriver.common.by import By #for find element by
 from selenium import webdriver #for webdriver
-from pathlib import Path #to find users download folder
+from pathlib import Path #to find user's download folder
 import logging #for logging
+from selenium.webdriver.chrome.options import Options #for chrome options (headed or headless)
+import argparse #for input argument (headed or headless)
 
-#configurations
+#set log level
 logging.basicConfig(level=logging.INFO)
+
+#get input argument
+parser = argparse.ArgumentParser()
+parser.add_argument("--headtype", help="choose headed or headless", default="headless")
+args = parser.parse_args()
+logging.info(args.headtype)
+
+#set chrome options (headed or headless)
+options = Options()
+if(args.headtype == "headless"):
+    options.add_argument("--headless")  #set to headless mode
+    options.add_argument("--disable-gpu") #widely used safety net for smooth operation
+    options.add_argument("--window-size=1920,1080") #another widely used setting for smooth operation
 
 #open rpa challenge site
 url = "https://rpachallenge.com/"
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(options=options)
 driver.get(url)
-driver.maximize_window()
 logging.info("rpa challenge site opened")
 
 #download excel data

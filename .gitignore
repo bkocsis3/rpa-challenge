@@ -1,3 +1,4 @@
-# Ignore virtual environments
+# Ignore
 venv/
 rpa-challenge-venv/
+.vs/
