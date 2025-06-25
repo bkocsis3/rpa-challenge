@@ -19,8 +19,10 @@ Good luck!
 8. Install dependancies in the virual environment: **pip install pandas requests selenium openpyxl**
 
 ### Running the Solution
-1. Run the Python script: **py rpa-challenge-headed.py**
+There are two ways you can run this automation. If you want to watch it, use headed. If you want speed, use headless. It will run headless by default.
+1. Headed: **py rpa-challenge.py --headtype=headed**
+2. Headless: **py rpa-challenge.py** OR **py rpa-challenge.py --headtype=headless**
 
-### Future Features/Versions
-1. Create a headless, dockerized version
-2. Create a headed, dockerized version that can be watched
+### To Do
+1. Add error handling
+2. Dockerize
