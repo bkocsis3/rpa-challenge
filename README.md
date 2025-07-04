@@ -45,7 +45,7 @@ You can run this solution in two ways.
   ``` bash#
   py rpa-challenge.py
   ```
-OR
+   OR
   ``` bash#
   py rpa-challenge.py --headtype=headless
   ```
