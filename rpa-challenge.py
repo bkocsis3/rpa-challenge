@@ -1,12 +1,12 @@
 #imports
 import pandas as pd #module for datasets
 import requests #for download
+import argparse #for input argument (headed or headless)
+import logging #for logging
+from selenium.webdriver.chrome.options import Options #for chrome options (headed or headless)
 from selenium.webdriver.common.by import By #for find element by
 from selenium import webdriver #for webdriver
 from pathlib import Path #to find user's download folder
-import logging #for logging
-from selenium.webdriver.chrome.options import Options #for chrome options (headed or headless)
-import argparse #for input argument (headed or headless)
 
 #set log level
 logging.basicConfig(level=logging.INFO)
@@ -33,7 +33,7 @@ logging.info("rpa challenge site opened")
 #download excel data
 download_url = "https://rpachallenge.com/assets/downloadFiles/challenge.xlsx"
 download_folder = str(Path.home() / "Downloads")
-file_name = download_folder + "\challenge.xlsx"
+file_name = download_folder + "/challenge.xlsx"
 download = requests.get(download_url)
 with open(file_name, 'wb') as f:
     f.write(download.content)
