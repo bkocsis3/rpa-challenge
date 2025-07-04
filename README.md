@@ -40,7 +40,7 @@ The goal of this project is to provide a production-ready RPA solution that:
    pip install pandas requests selenium openpyxl
    ```
 
-### Running the Solution (Without Docker)
+### 🏃Running the Solution (Without Docker)
 You can run this solution in two ways. 
 * Headed (for Visual Debugging):
   ``` bash#
