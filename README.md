@@ -42,11 +42,11 @@ The goal of this project is to provide a production-ready RPA solution that:
 
 ### 🏃Running the Solution (Without Docker)
 You can run this solution in two ways. 
-* Headed (for Visual Debugging):
+1. Headed (for Visual Debugging):
   ``` bash#
   py rpa-challenge.py --headtype=headed
   ```
-* Headless (for Fast, Efficient Execution):
+2. Headless (for Fast, Efficient Execution):
   ``` bash#
   py rpa-challenge.py
   ```
