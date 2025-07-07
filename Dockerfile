@@ -11,9 +11,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 #copy python solution
 COPY rpa-challenge.py ./
 
-#set run command
-CMD ["python", "rpa-challenge.py"]
-
 
 
 
