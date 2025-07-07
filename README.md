@@ -11,7 +11,7 @@ The goal of this project is to provide a production-ready Python solution that:
 
 ---
 
-### ⚙️ Setup (Using Docker, Assuming on Windows, Building Locally)
+### ⚙️ Setup (Using Docker, Assuming on Windows)
 
 1. Download Docker if needed: [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
 2. Download a VNC viewer if needed. I used Remote Ripple: [https://remoteripple.com/download/](https://remoteripple.com/download/)
@@ -28,25 +28,26 @@ The goal of this project is to provide a production-ready Python solution that:
    ``` bash#
    cd rpa-challenge
    ```
-8. Build the Docker image from the repo Dockerfile:
+8. Build a Docker image using the repo Dockerfile:
    ``` bash#
    docker build -t rpa-challenge .
    ```
    
 ---
 
-### 🏃Running the Solution (With Docker, Assuming on Windows, Building Locally)
+### 🏃Running the Solution (With Docker, Assuming on Windows)
 You can run this solution one of two ways. 
 - Headed (for Visual Debugging):
-   1. Run the docker image:
+   1. Run the new docker image / create a container:
       ``` bash#
       docker run -d -p 5900:5900 --name rpa-challenge-con rpa-challenge
       ```
-   2. VNC into the container. Use localhost:5900 with the password: secret
+   2. VNC into the new container using localhost:5900 & 'secret' as the password
    3. Execute the Python solution
       ``` bash#
       docker exec rpa-challenge-con python rpa-challenge.py --headtype=headed
       ```
+   4. Watch the automation in your VNC viewer
    
 - Headless (for Fast, Efficient Execution):
     ``` bash#
