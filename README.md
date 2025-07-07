@@ -13,7 +13,7 @@ The goal of this project is to provide a production-ready Python solution that:
 
 ### ⚙️ Setup (Using Docker, Assuming on Windows)
 
-1. Download Docker if needed: [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/))
+1. Download Docker if needed: [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
 2. Download a VNC viewer if needed. I used Remote Ripple: [https://remoteripple.com/download/](https://remoteripple.com/download/)
 4. Open Command Prompt
 5. Navigate to Downloads:  
