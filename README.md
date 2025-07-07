@@ -48,7 +48,7 @@ You can run this solution in two ways.
    ```
 2. Headless (for Fast, Efficient Execution):
     ``` bash#
-   py rpa-challenge.py --headtype=headless
+   py rpa-challenge.py
    ```
    or
    ``` bash#
