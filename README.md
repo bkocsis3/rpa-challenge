@@ -11,6 +11,32 @@ The goal of this project is to provide a production-ready Python solution that:
 
 ---
 
+### ⚙️ Setup (Using Docker, Assuming on Windows)
+
+1. Download Docker if needed: [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/))
+2. Download a VNC viewer if you want visual debugging inside your Docker container. I used Remote Ripple.
+   [https://remoteripple.com/download/](https://remoteripple.com/download/)
+4. Open Command Prompt
+5. Navigate to Downloads:  
+   ``` bash#
+   cd %USERPROFILE%\Downloads
+   ```
+6. Clone the repository:
+   ``` bash#
+   git clone https://github.com/bkocsis3/rpa-challenge.git
+   ```
+7. Change into the repo folder:
+   ``` bash#
+   cd rpa-challenge
+   ```
+8. Build the Docker image:
+   ``` bash#
+   docker build -t rpa-challenge .
+   ```
+
+   
+---
+
 ### ⚙️ Setup (Without Docker, Just Python, Assuming on Windows)
 
 1. Download Python if needed: [https://www.python.org/downloads/](https://www.python.org/downloads/)
@@ -19,14 +45,7 @@ The goal of this project is to provide a production-ready Python solution that:
    ``` bash#
    cd %USERPROFILE%\Downloads
    ```
-4. Clone the repository:
-   ``` bash#
-   git clone https://github.com/bkocsis3/rpa-challenge.git
-   ```
-5. Change into the repo folder:
-   ``` bash#
-   cd rpa-challenge
-   ```
+
 6. Create a virtual environment:
    ``` bash#
    py -m venv rpa-challenge-venv
