@@ -32,8 +32,34 @@ The goal of this project is to provide a production-ready Python solution that:
    ``` bash#
    docker build -t rpa-challenge .
    ```
-
    
+---
+
+### 🏃Running the Solution (With Docker, Assuming on Windows)
+You can run this solution one of two ways. 
+- Headed (for Visual Debugging):
+   1. Run the docker image:
+      ``` bash#
+      docker run -d -p 5900:5900 --name rpa-challenge-con rpa-challenge
+      ```
+   2. VNC into the container. See the screenshots below if using Remote Ripple.
+      -1
+      -2
+      -3
+   4. Execute the Python solution
+      ``` bash#
+      docker exec rpa-challenge-con python rpa-challenge.py --headtype=headed
+      ```
+   
+- Headless (for Fast, Efficient Execution):
+    ``` bash#
+   py rpa-challenge.py
+   ```
+   or
+   ``` bash#
+   py rpa-challenge.py --headtype=headless
+   ```
+
 ---
 
 ### ⚙️ Setup (Without Docker, Just Python, Assuming on Windows)
@@ -59,12 +85,12 @@ The goal of this project is to provide a production-ready Python solution that:
    ```
 
 ### 🏃Running the Solution (Without Docker, Just Python, Assuming on Windows)
-You can run this solution in two ways. 
-1. Headed (for Visual Debugging):
+You can run this solution one of two ways. 
+- Headed (for Visual Debugging):
    ``` bash#
    py rpa-challenge.py --headtype=headed
    ```
-2. Headless (for Fast, Efficient Execution):
+- Headless (for Fast, Efficient Execution):
     ``` bash#
    py rpa-challenge.py
    ```
