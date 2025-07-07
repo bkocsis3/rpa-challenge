@@ -11,7 +11,7 @@ The goal of this project is to provide a production-ready Python solution that:
 
 ---
 
-### ⚙️ Setup (Without Docker)
+### ⚙️ Setup (Without Docker, Just Python)
 
 1. Download Python if needed: [https://www.python.org/downloads/](https://www.python.org/downloads/)
 2. Open Command Prompt
@@ -40,7 +40,7 @@ The goal of this project is to provide a production-ready Python solution that:
    pip install pandas requests selenium openpyxl
    ```
 
-### 🏃Running the Solution (Without Docker)
+### 🏃Running the Solution (Without Docker, Just Python)
 You can run this solution in two ways. 
 1. Headed (for Visual Debugging):
    ``` bash#
