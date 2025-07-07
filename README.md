@@ -3,7 +3,7 @@
 ---
 
 ### 📖 Overview
-The goal of this project is to provide a production-ready RPA solution that:
+The goal of this project is to provide a production-ready Python solution that:
 
 1. Solves the [RPA Challenge](https://rpachallenge.com), a popular benchmark for RPA developers. The task involves extracting data from a provided Excel file and inputting it into a dynamically shuffled web form ten times.
 2. Is Docker-ready, allowing the solution to run easily across environments.
@@ -48,10 +48,6 @@ You can run this solution in two ways.
   ```
 2. Headless (for Fast, Efficient Execution):
   ``` bash#
-  py rpa-challenge.py
-  ```
-   or
-  ``` bash#
   py rpa-challenge.py --headtype=headless
   ```
 
@@ -59,5 +55,4 @@ You can run this solution in two ways.
 
 ### 🧠 To Do
 - [ ] Add error handling
-- [ ] Extend headed mode to Docker
 
