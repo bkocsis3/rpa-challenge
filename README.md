@@ -38,16 +38,16 @@ The goal of this project is to provide a production-ready Python solution that:
 ### 🏃Running the Solution (With Docker, Assuming on Windows)
 You can run this solution one of two ways. 
 - Headed (for Visual Debugging):
-   1. Run the new docker image / create a container:
+   1 Run the new docker image / create a container:
       ``` bash#
       docker run -d -p 5900:5900 --name rpa-challenge-con rpa-challenge
       ```
-   2. VNC into the new container using localhost:5900 & 'secret' as the password
-   3. Execute the Python solution
+   2 VNC into the new container using localhost:5900 & 'secret' as the password
+   3 Execute the Python solution
       ``` bash#
       docker exec rpa-challenge-con python rpa-challenge.py --headtype=headed
       ```
-   4. Watch the automation in your VNC viewer
+   4 Watch the automation in your VNC viewer
    
 - Headless (for Fast, Efficient Execution):
     ``` bash#
