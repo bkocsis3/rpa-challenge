@@ -3,7 +3,7 @@
 ## 📖 Overview
 The goal of this project is to provide a production-ready Python solution that:
 
-1. Solves the [RPA Challenge](https://rpachallenge.com), a popular benchmark for RPA developers. This task involves extracting data from an Excel file and entering it into web form with randomly placed fields - ten times.
+1. Solves the [RPA Challenge](https://rpachallenge.com), a popular benchmark for RPA developers. This task involves extracting data from an Excel file and entering it into a web form with randomly placed fields - ten times.
 2. Is Docker-ready, allowing the solution to run easily across environments.
 3. Supports both **headed mode** (for visual debugging) and **headless mode** (for fast, efficient execution).
 
